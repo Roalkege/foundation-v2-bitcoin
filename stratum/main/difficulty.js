@@ -81,7 +81,7 @@ const Difficulty = function(config) {
 
     // Difficulty Will Be Updated
     if (updatedDifficulty !== null) {
-      const newDifference = parseFloat((client.difficulty * updatedDifficulty).toFixed(8));
+      const newDifference = parseFloat((client.difficulty * updatedDifficulty).toFixed(12));
       _this.emit('client.difficulty.new', client, newDifference);
     }
 
